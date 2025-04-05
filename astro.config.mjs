@@ -9,7 +9,7 @@ export default defineConfig({
   server: {
     port: process.env.PORT ? parseInt(process.env.PORT) : 4321,
     // Required for some hosting, like Heroku
-    // host: true
+    host: true
   },
   adapter: node({
     mode: 'standalone'
@@ -27,7 +27,7 @@ export default defineConfig({
     ],
     excludeRequestHeaders: [
       // For hosting on multiple servers, block the host header
-      // 'host'
+      'host'
     ]
   })],
   vite: {
