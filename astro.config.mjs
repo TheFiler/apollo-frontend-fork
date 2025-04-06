@@ -19,6 +19,7 @@ export default defineConfig({
     widgetsMapping: './src/widgets',
     templatesMapping: './src/templates',
     includeResponseHeaders: [
+      'content-type',
       'content-security-policy',
       'strict-transport-security',
       'x-frame-options',
